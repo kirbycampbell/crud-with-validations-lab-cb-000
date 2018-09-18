@@ -3,7 +3,7 @@ class Song < ActiveRecord::Base
 
 
   validates :release_year, presence: true, if: :released?, numericality: { less_than_or_equal_to: Date.today.year}
-  validates :title, uniqueness: true, if: !artist_same?
+  validates :title, uniqueness: true, if: !:artist_same?
 
   def released?
     released
