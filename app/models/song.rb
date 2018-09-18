@@ -9,10 +9,6 @@ class Song < ActiveRecord::Base
     released
   end
 
-  def artist_same?
-    @song = Song.findby(:title)
-    @song.artist_name == artist_name
-  end
 
 
 end
