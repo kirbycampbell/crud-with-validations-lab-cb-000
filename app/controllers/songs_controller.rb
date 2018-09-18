@@ -8,15 +8,15 @@ class SongsController < ApplicationController
     @song = Song.find_by(params[:id])
   end
 
+  def edit
+    @song = Song.find_by(params[:id])
+  end
+
   def new
 
   end
 
   def create
-
-  end
-
-  def edit
 
   end
 
