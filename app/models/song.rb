@@ -8,6 +8,6 @@ class Song < ActiveRecord::Base
     else
       false
   end
-  
+
 
 end
